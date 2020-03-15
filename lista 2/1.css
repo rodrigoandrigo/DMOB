@@ -1,0 +1,99 @@
+#p{
+    border-left: 20em green solid;
+    border-right: 20em red solid;
+    width: 60%;
+    height: 400px;
+    font-size: 12px;
+    letter-spacing: 3em;
+    word-spacing: 4ex;
+    box-sizing: 3em;
+    text-align: justify;
+    font: verdana;
+    text-indent: 25px;
+}
+p::first-letter{
+    font-size: 36px;
+    color: blue;
+    text-decoration: overline;
+}
+p::first-line{
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+#divx{
+    width: 800p;
+    height: 500px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+#div1{
+    height: 20%;
+    width: 100%;
+    border:1px solid;
+}
+#div2{
+    width: 20%;
+    height: 60%;
+    border:1px solid;
+    float: left;
+}
+#div3{
+    width: 79%;
+    height: 60%;
+    border:1px solid;
+    float: left;
+}
+#div4{
+    width: 100%;
+    height: 80%;
+    border:1px solid;
+    float: left;
+}
+#aa{
+    text-decoration: none;
+}
+#ab{
+    text-decoration: overline;
+}
+#ab:active{
+    text-decoration:line-through;
+}
+#ab:visited{
+    text-decoration: underline;
+}
+#ac{
+    text-decoration: none;
+    color: green;
+}
+#ac:hover{
+    text-decoration: overline;
+    color: orange;
+}
+#ad{
+    color: white;
+    text-decoration: none;
+    border: solid blue;
+    background-color: black;
+}
+#ad:hover{
+    color: black;
+    text-decoration: none;
+    border: dotted black;
+    background-color: white;
+}
+#ae{
+    text-decoration: none;
+    color: red;
+}
+#ae:visited{
+    color: orange;
+    font-style: italic;
+    font-weight: bold;
+}
+#ae:hover{
+    text-decoration: underline;
+}
+#ae:active{
+    color: yellow;
+}
