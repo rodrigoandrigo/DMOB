@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <h4>CSS</h4>
+        <p id="t1"> CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. </p>
+    </div>
+    <button onclick="doisemum()">Esconder/Mostrar</button>
+    <script>
+        function doisemum() {
+            x1 = document.getElementById('t1');
+            if (x1.style.display === "none") {
+                x1.style.display = "block";
+            } else {
+                x1.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

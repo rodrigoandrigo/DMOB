@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <form action="#" id="form1" method="post">
+            <legend>Formulario Simples</legend>
+            </br>Nome
+            <input type="text" required name="nome1"></br>
+            </br>Nome2
+            <input type="text" required name="nome2"></br>
+            </br>Nome3
+            <input type="text" required name="nome3"></br>
+            </br>Nome4
+            <input type="text" required name="nome4"></br>
+            </br>Nome5
+            <input type="text" required name="nome5"></br>
+            </br>
+            </br><input type="submit" onclick="return INin()" name="envia" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        function INin() {
+            p = [form1.nome1.value, form1.nome2.value, form1.nome3.value, form1.nome4.value, form1.nome5.value];
+
+            document.write(p[4], "</br>", p[3], "</br>", p[2], "</br>", p[1], "</br>", p[0], "</br>");
+        }
+        //INin- inserir e inverter.
+    </script>
+</body>
+
+</html>

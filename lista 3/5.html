@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <form action="#" id="form1" method="post">
+            <legend>Formulario Simples</legend>
+            </br>Nome
+            <input type="text" required name="nome"></br>
+            </br>Senha
+            <input type="password" required id="se1" name="senha1"></br>
+            </br>confirmar senha
+            <input type="password" required id="se2" name="senha2"></br>
+            </br><input type="submit" onclick="return valid()" name="envia" value="Enviar">
+            </br>
+        </form>
+
+    </div>
+
+    <script>
+
+        function valid() {
+            var s1 = form1.senha1.value
+            var s2 = form1.senha2.value
+            if (s1.length < 6 || s1.length > 10) {
+                alert("Escreva a senha entre 6 a 10 caracteres");
+                form1.senha1.focus();
+                return false;
+            }
+            if (s2.length < 6 || s2.length > 10) {
+                alert("Escreva a outra senha entre 6 a 10 caracteres");
+                form1.senha2.focus();
+                return false;
+            }
+            if (s1 !== s2) {
+                alert("Rescreva a senha corretamente em ambos os campo");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+
+        </br>Nome<input type="text" required name="nome1">
+        </br>Pessoa Fisica<input type="radio" name="radioP" id="r1">
+        </br>Pessoa Juridica<input type="radio" name="radioP" id="r1">
+        </br>CPF<input type="text" required name="CPF1">
+        </br>CNPJ<input type="text" required name="CNPJ1">
+        </br>Data de Nascimento<input type="date" required name="data1" id="d1">
+        </br>Endereço<input type="text" required name="Ender">
+        </br>CEP<input type="text" required name="CEP1">
+        </br>Telefone fixo<input type="tel" required name="tele1" id="t1">
+        </br>Email<input type="email" required name="email1" id="e1"></br>
+        <button type="submit" required name="enviar1">Enviar</button>
+    </div>
+
+    <script>
+        x1 = document.getElementsByName('radioP')
+        x1.array.forEach(x2 => {
+            x2.addEventListener("click", x3 => {
+                if (x2.value === "CPF1") {
+                    document.querySelector('CPF1').style.display = 'block'
+                    document.querySelector('CNPJ1').style.display = 'none'
+                } else {
+                    document.querySelector('CPF1').style.display = 'none'
+                    document.querySelector('CNPJ1').style.display = 'block'
+                }
+            }
+            )
+
+        })
+
+    </script>
+</body>
+
+</html>

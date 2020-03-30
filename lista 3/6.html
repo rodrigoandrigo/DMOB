@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <form action="#" id="form1" method="post">
+            <legend>Verificar palindromo</legend>
+            </br>escreva uma palavra <input type="text" name="palavra" id="p1">
+            <button onclick="return conferir()">Verificar</button>
+        </form>
+
+    </div>
+
+    <script>
+        function palindrome(palavra) {
+            x1 = palavra.split("");
+            x2 = x1.reverse();
+            x3 = x2.join("");
+            return x3;
+        }
+
+        function conferir() {
+            x4 = document.getElementById("p1").value;
+            x5 = palindrome(x4);
+            x6 = x5.localeCompare(x4);
+            if (x6 === 0)
+                alert("É palindrome");
+            else
+                alert("Não é palindrome");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

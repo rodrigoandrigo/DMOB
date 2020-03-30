@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <fieldset>
+            <p>Só tem 4 cores de fundo</p>
+            <button onclick="cor(this)">vermelho</button>
+            <button onclick="cor(this)">verde</button>
+            <button onclick="cor(this)">azul</button>
+            <button onclick="cor(this)">amarelo</button>
+        </fieldset>
+    </div>
+    <script>
+        function cor(cor1) {
+            let body = document.getElementsByTagName('body')
+            x1 = cor1.innerHTML
+            if (x1 === "vermelho") {
+                body[0].style.backgroundColor = "red"
+            }
+            if (x1 === "verde") {
+                body[0].style.backgroundColor = "green"
+            }
+            if (x1 === "azul") {
+                body[0].style.backgroundColor = "blue"
+            }
+            if (x1 === "amarelo") {
+                body[0].style.backgroundColor = "yellow"
+            } else {
+                return
+            }
+
+        }
+    </script>
+</body>
+
+</html>

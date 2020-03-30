@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+    <div id="divx">
+        <form action="#" id="form1" method="post">
+            Primeiro nome</br>
+            <input type="text" required name="nome1" id="n1"></br>
+            Segundo nome</br>
+            <input type="text" required name="nome2" id="n2"></br>
+            </br>
+            <button type="submit" onclick="return inter(n1,n2)" name="enviar1">Enviar</button></br>
+        </form>
+    </div>
+
+    <script>
+        function inter(x4, x5) {
+            var doisn = x4.value + x5.value
+            jun = ''
+            x1 = x2 = 0;
+            for (let x3 = 0; x3 < doisn.length; x3++) {
+                if (x3 % 2 === 0) {
+                    jun += x4.value[x1]
+                    x1++
+                } else {
+                    jun += x5.value[x2]
+                    x2++
+                }
+
+            }
+            document.write(jun);
+        }
+    </script>
+</body>
+
+</html>
