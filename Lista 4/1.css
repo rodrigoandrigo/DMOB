@@ -1,0 +1,45 @@
+@media(min-width: 400px) {
+    #div1 {
+        width: 40%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #div2 {
+        width: 59%;
+        height: 40;
+        border: 0 solid;
+        margin: 0 auto;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media(min-width: 720px) {
+    #div1 {
+        width: 40%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        float: left;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    #div2 {
+        width: 59%;
+        height: 40;
+        border: 0 solid;
+        margin: 0 auto;
+        float: right;
+    }
+    p {
+        text-align: center;
+    }
+}

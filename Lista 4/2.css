@@ -1,0 +1,100 @@
+@media(min-width: 400px) {
+    #header1 {
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #8181F7;
+        float: left;
+    }
+    #nav1 {
+        position: relative;
+        top: 265px;
+        width: 100%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #5858FA;
+        float: left;
+    }
+    #main1 {
+        position: relative;
+        top: -175px;
+        width: 100%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #2E2EFE;
+        float: left;
+    }
+    #aside1 {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #5882FA;
+        float: left;
+    }
+    #footer1 {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #2E64FE;
+        float: left;
+    }
+}
+
+@media(min-width: 720px) {
+    #header1 {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #8181F7;
+        float: left;
+    }
+    #nav1 {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 30%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #5858FA;
+        float: left;
+    }
+    #main1 {
+        position: relative;
+        top: 0px;
+        width: 70%;
+        height: 70%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #2E2EFE;
+        float: left;
+    }
+    #aside1 {
+        position: relative;
+        width: 30%;
+        height: 30%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #5882FA;
+        float: right;
+    }
+    #footer1 {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        border: 0 solid;
+        margin: 0 auto;
+        background-color: #2E64FE;
+        float: left;
+    }
+}
