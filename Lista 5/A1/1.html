@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>atividade1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1.css">
+
+</head>
+
+<body>
+    <div id="divx">
+        <form action="#" id="form1" method="post"></form>
+        </br>
+        <p>Escreva um numero</p>
+        </br><input type="number" required name="numero" id="n1"></br>
+        </br><input type="submit" onclick="addI()" value="Adicionar" id="add_field"></br>
+        </form>
+        <form action="/result" method="post" id="form2"> </form>
+    </div>
+    <script>
+        //Adicionar Inputs
+        function addI() {
+            let q1 = document.getElementById('n1').value
+            let form = document.getElementById('form2')
+
+            for (let i = 0; i < q1; i++) {
+                form.insertAdjacentHTML("afterbegin", `<input type='number' name=${"param" + i} required id=${"param" + 1}> `)
+            }
+
+            form.insertAdjacentHTML("beforeend", "<input type='submit' onclick='addN()' value='Somar'>")
+        }
+        //Adiçao de todos os campos
+        function ADCTCampos() {
+            let form = document.getElementById('form2')
+
+            c1 = form.children
+
+            for (let i = 0; i < c1 - 1; i++) {
+                console.log(i)
+            }
+        }
+    </script>
+
+</body>
+
+</html>
